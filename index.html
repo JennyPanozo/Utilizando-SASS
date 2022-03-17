@@ -5,45 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Door</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    
 </head>
 <body>
 <!--HEADER + NAV-->
-    <header>
-        <img src="./imagenes/Logo de Open Door.jpg" alt="Logo de Open Door" width="150px">
-        <nav>
-            <ul class="nav">
-                <li class="li1"><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
-                <li class="li2"><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
-                <li class="li3"><a href="http://127.0.0.1:5500/local.html">Locales</a></li>
-                <li class="li4"><a href="http://127.0.0.1:5500/sn.html">Sobre Nosotros</a></li>
-                <li class="li5"><a href="http://127.0.0.1:5500/contacto.html">Contacto</a></li>
-                <li class="li6"><a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/open-door-burger-menu" >PEDI YA</a></li>
-
+  <header>
+      <img src="./imagenes/Logo de Open Door.jpg" alt="Logo de Open Door" width="150px">
+      
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse-navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:5500/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:5500/local.html">Locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:5500/sn.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:5500/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/open-door-burger-menu">PEDI YA</a>
+              </li>
+              
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
         
-    </header>
+  </header>
     <!--MAIN CON SECCION-->
     
-    <main>
-         <div class="contenedor">
+  <main>
+    <div class="contenedor">
             
                 
-            <h3 class="titulo">Fuimos elegidos entre las 28 mejores hamburgueserias de Buenos Aires </h3>
-            <img class="imagen" src="./imagenes/unnamed.png" alt="Hamburguesa de open door" width="450px">
-            <h4 class="texto">Recientemente se celebro el Dia Internacional de la Hamburguesa  en el cual fuimos destacados por el sabor de nuestros productos 
+      <h3 class="titulo">Fuimos elegidos entre las 28 mejores hamburgueserias de Buenos Aires </h3>
+      <img class="imagen" src="./imagenes/unnamed.png" alt="Hamburguesa de open door" width="450px">
+      <h4 class="texto">Recientemente se celebro el Dia Internacional de la Hamburguesa  en el cual fuimos destacados por el sabor de nuestros productos 
             siendo comparado con grandes cadenas de hamburguesas como Dean & Dennis, Perez H, Big Pons, entre otros.
             Nuestras hamburguesas mas elegidas fueron la " Tapa Arterias", la "American Style" y la "Chesse Burger".</h4>
                     
-         </div>
+    </div>
         <!--2DA PARTE DE LA PAGINA WEB-->
-        <section>
-            <img class="fondoDeHamburguesa" src="./imagenes/fondo.png" alt="Hamburguesa de Open Door"width="800px"><br>
-        </section>
+      <div class="conteiner">
+        <div id="carouselExampleControls" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagenes/local de open door.jpeg" class="d-block w-100" alt="foto del local">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagenes/local 2.jpeg" class="d-block w-100" alt="foto del local">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+        
         
            
-    </main>
+   </main>
     <!--FOOTER-->
     <footer>
         <div class="contenedor2">
@@ -57,5 +98,6 @@
             
         </div>
     </footer>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
