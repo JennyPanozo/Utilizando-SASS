@@ -15,22 +15,21 @@ header{
     justify-content: space-around ;
     align-items: center;
 }
-
-.nav-item{
-    font-size: 30px;
+.navbar{
+    font-weight: 200px;
+    font-size: 27px;
+    
     
 }
-
-li:hover{
-    height: 50px;
-    
-}
-.nav a{
-    text-decoration: none;
-    color: black;
+header div div div a:hover{
+    background: rgba(0, 0,0, 0.2);
+    color: black
 }
 .conteiner{
     height: 600px;
+}
+.navbar-nav{
+    color:black;
 }
 
 .contenedor{
@@ -76,6 +75,8 @@ li:hover{
     grid-template-rows: 1fr;
     width: 100%;
     grid-template-areas: "logo textofinal";
+    height: auto;
+    align-items: center;
 }
 .contenedor2 .logoFinal{
     grid-area: logo ;
@@ -116,7 +117,7 @@ li:hover{
     
     .contenedor{
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 600px 300px;
+    grid-template-rows: 350px 500px 350px;
     grid-template-areas: 
     "titulo"
     "texto"
@@ -128,6 +129,10 @@ li:hover{
         grid-template-areas: 
         "logo"
         "textofinal";
+    }
+    .conteiner{
+        height: 200px;
+        margin: 5px;
     }
     
 }
@@ -160,12 +165,14 @@ li:hover{
 @media screen and (max-width:500px){
     
     .contenedormenu{
-     grid-template-columns: 450px;
-     grid-template-rows: 50px auto;
+     grid-template-columns: auto;
+     grid-template-rows: 50px auto ;
+     justify-items: center;
      
     }
     .contenedormenu .imagenmenu{
         width: 300px;
+        justify-content: center;
     }
     
      .contenedor2{
