@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #f31111;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  header .navbar {
+    font-weight: 200px;
+    font-size: 27px; }
+  header div div div a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: black; }
+
+main .contenedor {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-areas: 2px;
+  grid-template-areas: "titulo imagen"
+ "texto imagen"; }
+  main .contenedor .titulo {
+    padding: 20px;
+    font-size: 50px;
+    grid-area: titulo; }
+  main .contenedor .texto {
+    padding: 20px;
+    font-size: 30px;
+    grid-area: texto;
+    font-weight: lighter; }
+  main .contenedor .imagen {
+    padding: 20px;
+    grid-area: imagen;
+    align-self: center; }
+
+main .conteiner {
+  height: 600px; }
+
+.contenedor2 {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  grid-template-areas: "logo textofinal";
+  height: auto;
+  align-items: center; }
+  .contenedor2 .logoFinal {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+    margin: 15px; }
+  .contenedor2 .textofinal {
+    grid-area: textofinal;
+    font-size: 25px;
+    align-self: center;
+    color: black; }
+
+@media screen and (max-width: 500px) {
+  header {
+    background-color: #f31111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  main .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 500px 350px;
+    grid-template-areas: "titulo"
+ "texto"
+ "imagen"; }
+  main .conteiner {
+    height: 200px;
+    margin: 5px; }
+  .contenedor2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250fr;
+    grid-template-areas: "logo"
+ "textofinal"; } }
+
+.contenedormenu {
+  width: 90%;
+  height: 90%;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto;
+  gap: 25px;
+  justify-items: center; }
+  .contenedormenu h2 {
+    font-size: 30px;
+    text-decoration: underline; }
+  .contenedormenu h3 {
+    font-size: 25px; }
+
+@media screen and (max-width: 500px) {
+  .contenedormenu {
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    justify-items: center; }
+    .contenedormenu .imagenmenu {
+      width: 300px;
+      justify-content: center; }
+  .contenedor2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250fr;
+    grid-template-areas: "logo"
+ "textofinal"; } }
+
+.contenedorlocal {
+  width: 90%;
+  height: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 50px 100px 300px;
+  grid-template-areas: "titulo titulo"
+ "barrio1 barrio2"
+ "texto1 texto2"
+ "mapa1 mapa2"; }
+  .contenedorlocal .titulolocal {
+    grid-area: titulo;
+    justify-self: center;
+    margin: 20px;
+    text-decoration: underline; }
+  .contenedorlocal .barrio1local {
+    grid-area: barrio1; }
+  .contenedorlocal .texto1local {
+    grid-area: texto1;
+    font-weight: lighter; }
+  .contenedorlocal .mapa1local {
+    grid-area: mapa1; }
+  .contenedorlocal .barrio2local {
+    grid-area: barrio2; }
+  .contenedorlocal .texto2local {
+    grid-area: texto2;
+    font-weight: lighter; }
+  .contenedorlocal .mapa2local {
+    grid-area: mapa2; }
+
+@media screen and (max-width: 500px) {
+  .contenedorlocal {
+    justify-items: center;
+    height: auto;
+    width: auto;
+    grid-template-columns: 450px;
+    grid-template-rows: 100px 50px 100px 500px
+ 50px 100px 400px;
+    grid-template-areas: "titulo"
+ "barrio1"
+ "texto1"
+ "mapa1"
+ "barrio2"
+ "texto2"
+ "mapa2"; }
+    .contenedorlocal .mapa1local {
+      width: 400px; }
+    .contenedorlocal .mapa2local {
+      width: 400px; } }
+
+.contenedorsn {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 50px auto auto;
+  justify-items: center; }
+  .contenedorsn .textosn {
+    font-weight: normal; }
+
+@media screen and (max-width: 500px) {
+  .contenedorsn {
+    height: auto;
+    width: auto;
+    margin: 30px;
+    grid-template-columns: 450px;
+    grid-template-rows: 70px 700px 300px; }
+    .contenedorsn .localsn {
+      width: 400px; } }
+
+.contenedorcontacto {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  justify-items: center; }
+  .contenedorcontacto h1 {
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: underline; }
+  .contenedorcontacto h3 {
+    font-size: 20px; }
+
+@media screen and (max-width: 500px) {
+  .contenedorcontacto {
+    grid-template-columns: 450px;
+    grid-template-rows: 50px 50px 100px; }
+    .contenedorcontacto img {
+      width: 400px; }
+  .contenedor2 {
+    grid-template-columns: 450px;
+    grid-template-rows: 250px 100px;
+    justify-items: center;
+    grid-template-areas: "logo"
+ "textofinal"; } }
