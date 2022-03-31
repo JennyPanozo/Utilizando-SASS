@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.modotexto, .contenedorlocal .barrio1local, .contenedorlocal .texto1local, .contenedorlocal .barrio2local, .contenedorlocal .texto2local {
+  font-size: 40px;
+}
+
 header {
   background-color: #f31111;
   display: -webkit-box;
@@ -26,19 +30,12 @@ header .navbar {
   font-size: 27px;
 }
 
-header div div div a:hover {
-  background: rgba(0, 0, 0, 0.2);
-  color: black;
-}
-
 main .contenedor {
   width: 90%;
   height: 90%;
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
   -ms-grid-rows: 1fr 1.5fr;
       grid-template-rows: 1fr 1.5fr;
       grid-template-areas: 2px;
@@ -79,7 +76,7 @@ main .conteiner {
 }
 
 .contenedor2 {
-  background-color: red;
+  background-color: #f31111;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
@@ -114,7 +111,6 @@ main .conteiner {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: black;
 }
 
 @media screen and (max-width: 500px) {
@@ -161,8 +157,6 @@ main .conteiner {
   margin: 40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
   -ms-grid-rows: 50px auto;
       grid-template-rows: 50px auto;
   gap: 25px;
@@ -170,7 +164,6 @@ main .conteiner {
 }
 
 .contenedormenu h2 {
-  font-size: 30px;
   text-decoration: underline;
 }
 
@@ -207,8 +200,6 @@ main .conteiner {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 100px 50px 100px 300px;
       grid-template-rows: 100px 50px 100px 300px;
       grid-template-areas: "titulo titulo" "barrio1 barrio2" "texto1 texto2" "mapa1 mapa2";
